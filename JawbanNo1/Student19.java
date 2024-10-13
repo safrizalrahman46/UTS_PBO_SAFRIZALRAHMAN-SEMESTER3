@@ -1,4 +1,4 @@
-package JawbanNo1dan2;
+package JawbanNo1;
 
 import java.util.ArrayList;
 import java.util.Date;

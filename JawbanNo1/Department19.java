@@ -1,4 +1,4 @@
-package JawbanNo1dan2;
+package JawbanNo1;
 
 public class Department19 {
     private final String departmentName; // Made final

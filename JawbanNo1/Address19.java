@@ -1,4 +1,4 @@
-package JawbanNo1dan2;
+package JawbanNo1;
 class Address19 {
     private final String street;
     private final String city;
