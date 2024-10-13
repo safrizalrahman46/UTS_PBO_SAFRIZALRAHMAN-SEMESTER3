@@ -38,4 +38,20 @@ public class Person19 {
         this.phoneNumber = "Unknown";
         this.emailAddress = "Unknown";
     }
+    
+     public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    public Address19 getAddress() {
+        return address;
+    }
+
+    public Date getDateOfBirth() {
+        return dateOfBirth;
+    }
 }
