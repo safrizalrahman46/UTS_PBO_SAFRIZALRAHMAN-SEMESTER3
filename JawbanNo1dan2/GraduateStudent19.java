@@ -20,6 +20,10 @@ public class GraduateStudent19 extends Student19 {
         // Implementation
     }
 
+    public Professor19 getAdvisor() {
+        return advisor;
+    }
+
     public void addResearchProject(ResearchProject19 project) {
         this.researchProjects.add(project);
     }

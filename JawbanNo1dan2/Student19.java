@@ -16,6 +16,11 @@ public class Student19 extends Person19 {
         this.averageMark = averageMark;
     }
 
+            // Getter for studentNumber
+    public String getStudentNumber() {
+        return studentNumber;
+    }
+
     public void enrollInCourse(Course19 course) {
         this.enrolledCourses.add(course);
     }

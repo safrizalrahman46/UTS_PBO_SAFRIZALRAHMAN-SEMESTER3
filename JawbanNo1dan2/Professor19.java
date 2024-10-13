@@ -32,4 +32,15 @@ public class Professor19 extends Person19 {
     public void publishPaper(String title, String journal) {
         // Implementation
     }
+    public float getSalary() {
+        return salary;
+    }
+
+    // Getter for department
+    public Department19 getDepartment() {
+        return department;
+    }
+    public List<ResearchProject19> getResearchProjects() {
+        return new ArrayList<>(researchProjects); // Return a copy to prevent modification
+    }
 }
