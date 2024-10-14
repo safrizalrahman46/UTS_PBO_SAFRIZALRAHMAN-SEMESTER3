@@ -1,8 +1,6 @@
 package JawbanNo1;
 
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 public class MainyaMadeBySafrizal {
     public static void main(String[] args) {
@@ -10,8 +8,10 @@ public class MainyaMadeBySafrizal {
         Address19 address1 = new Address19("123 Main St", "Springfield", "IL", "62704", "USA");
         Address19 address2 = new Address19("456 Elm St", "Springfield", "IL", "62704", "USA");
 
-        // Create Professor instance
+        // Create Department instance
         Department19 compSciDepartment = new Department19("Computer Science");
+
+        // Create Professor instance
         Professor19 professor = new Professor19("Dr. Jane Doe", "555-1234", "jane.doe@example.com", address1, new Date(), 90000, compSciDepartment);
 
         // Create Course instance
@@ -32,9 +32,26 @@ public class MainyaMadeBySafrizal {
         gradStudent.addResearchProject(researchProject);
         researchProject.addResearcher(gradStudent);
 
+        // Assign the course to the professor
+        professor.assignCourse(course);
+
+        // Professor conducts research on the project
+        professor.conductResearch(researchProject);
+
         // Output details
         System.out.println(professor.getFullName() + " is teaching " + course.getCourseName());
         System.out.println(student.getFullName() + " is enrolled in " + course.getCourseName());
         System.out.println(gradStudent.getFullName() + " is working on research project " + researchProject.getProjectName());
+        System.out.println("Department: " + professor.getDepartment().getDepartmentName());
+
+        // Example to validate Address
+        System.out.println("Is Address1 valid? " + address1.validate());
+        System.out.println("Address1 Label: " + address1.outputAsLabel());
+
+        // Simulate graduate student submitting a thesis
+        gradStudent.submitThesis();
+
+        // Professor publishes a paper
+        professor.publishPaper("Advanced Quantum Mechanics", "International Journal of Quantum Physics");
     }
 }
